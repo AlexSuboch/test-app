@@ -17,7 +17,7 @@ export default function SecondMenu(props){
     return(
             <Container>
                 <Body key = {props.element.id}>
-                    <Link to = {props.element.path} >
+                    <Link to = {`/testApp${props.element.path}`}>
                         <SmDiv key = {props.element.id}>
                             {props.element.title}
                         </SmDiv>
@@ -32,7 +32,7 @@ export default function SecondMenu(props){
                 </Body>
                 {open && activeTab === openSecondMenu ?
                          props.element.items.map( (el, ind) =>
-                        <Link key = {ind} to = {el.path} > 
+                        <Link key = {ind} to = {`/testApp/${el.path}`}> 
                             <p>{el.title}</p>
                         </Link>
                          )

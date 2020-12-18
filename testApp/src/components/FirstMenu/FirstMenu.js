@@ -24,7 +24,7 @@ export default function AdaptiveBlock(props){
     return(
         <div>
             <Head>
-                <Link to = {props.path} key = {props.id}>
+                <Link to = {`/testApp${props.path}`} key = {props.id}>
                     <Title id = {props.id} items = {props.items}>
                         {props.children}    
                     </Title>

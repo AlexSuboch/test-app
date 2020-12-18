@@ -16,7 +16,7 @@ export default function Nav(){
         <Wrapper onMouseEnter = { () => dispatch(clearActiveTab())}> 
             <NavUl>
                 {data.map((e, i) => 
-                <Link to = {e.path} key = {i}> 
+                <Link to = {`/testApp${e.path}`} key = {i}> 
                     <NavTab id = {data[i].id} key = {i} title = {e.title} /> 
                 </Link>)}
             </NavUl >
