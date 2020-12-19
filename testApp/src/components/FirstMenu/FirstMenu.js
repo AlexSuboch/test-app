@@ -56,6 +56,10 @@ const Title = styled.div`
     width: 150px;
     background-color: rgb(230, 230, 230);
     margin: 5px 0;
+
+    @media (max-width: 400px) {
+        width: 90px;
+      }
 `
 
 const Head = styled.div`

@@ -32,7 +32,7 @@ export default function SecondMenu(props){
                 </Body>
                 {open && activeTab === openSecondMenu ?
                          props.element.items.map( (el, ind) =>
-                        <Link key = {ind} to = {`/testApp/${el.path}`}> 
+                        <Link key = {ind} to = {`/testApp${el.path}`}> 
                             <p>{el.title}</p>
                         </Link>
                          )
@@ -49,6 +49,10 @@ const SmDiv = styled.div`
     width: 120px;
     background-color: rgb(230, 230, 230);
     margin: 5px 0;
+    
+    @media (max-width: 400px) {
+        width: 70px;
+      }
 `
 
 const Container = styled.div`
